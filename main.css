@@ -1,0 +1,76 @@
+/*DONE BY AJAY.R, CSE-3A,HITS*/
+*{
+	font-family:verdana;
+}
+h3{
+	
+	text-align:center;
+	font:bold 28px;
+	text-decoration:underline;
+	padding-left:10px;
+	
+}
+#dept {
+	padding-left:400px;
+	padding-top:5px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+#data1{
+	text-align:center;
+	
+}
+#creator{
+	padding:15px;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+}
+#rest{
+	text-align:center;
+		
+}
+#result{
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+body
+{
+	background-color:#88B04B;
+}
+#ibm{
+	text-align:center;
+}
+table{
+	
+	padding-left:160px;
+
+}
+#note1{
+		padding-left:840px;
+		font-weight:bold;
+}
+#rad2{
+	padding-left:550px;
+}
+#note2{
+	text-align:center;
+}
+#note3{
+	text-align:center;
+}
+	
+table caption{
+	padding:50px 10px 20px 190px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+table tr td{
+	text-align:center;
+	padding:10px;
+}
+table tr th{
+	text-align:center;
+	padding:10px;
+}
