@@ -5,9 +5,9 @@
 	<title>	GPA CALCULATOR </title>
 	<link rel="stylesheet" href="main.css"/>
 	<script type="text/javascript">
-	var sum=0,i,l=24,c1=8,count=0,t;
+	var sum=0,i,l=29,c1=9,count=0,t;
 	var a=new Array(20);
-	for(t=0;t<9;t++)
+	for(t=0;t<10;t++)
 		a[t]=100;
 	
 	function calculate(n,i)
@@ -17,9 +17,10 @@
 		c=4;
 	else if(i=="grade7"||i=="grade8")
 		c=2;
-	else 
-		c=3;
-	
+		else if(i=="grade9")
+			c=5;
+		else 
+			c=3;
 	switch(i)
 		{	
 		
@@ -30,7 +31,8 @@
 		case "grade5":	a[4]=n*c; break;
 		case "grade6":	a[5]=n*c; break;
 		case "grade7":	a[6]=n*c; break;
-		case "grade8":	a[7]=n*c; break;
+		case "grade8":	a[7]=n*c; break; 
+		case "grade9":	a[8]=n*c; break;
 		
 		}
 	
@@ -76,7 +78,7 @@
 </head>
 <body>
 		<div id="top"></div>
-		<h3>SATHYABAMA UNIVERSITY <br/> 3rd SEMESTER GPA CALCULATOR 2017 </h3>
+		<h3>SATHYABAMA UNIVERSITY <br/> 5th SEMESTER GPA CALCULATOR 2018 </h3>
 		
 		<div id="data1">
 		<strong>ELECTRONICS AND COMMUNICATION<br/>
@@ -85,7 +87,12 @@
 		<br/>
 		<br/>
 		<div id="rest"> <strong>(The calculator doesn't include arrear subjects of previous semester)<br/><br/>
-		<u>"Please enter the grades carefully"</u></strong>
+		<u>"Please enter the grades carefully"</u></strong> <br> <br>
+				<strong><u>Marks to Grade Conversion<br></u><br> 50 - 59 marks = GRADE 6 <br>
+						             60 - 69 marks = GRADE 7 <br>
+						             70 - 79 marks = GRADE 8 <br>
+							         80 - 89 marks = GRADE 9 <br>
+							         90 - 100 marks = GRADE 10</strong>
                 </div>
 		<table>
 			
@@ -98,17 +105,17 @@
 			</tr>
 			<tr>
 				<td> 1 </td>
-				<td> SMT1201</td>
-				<td> ENGINEERING MATHEMATICS-III </td>
+				<td> SEC1314</td>
+				<td> DIGITAL SIGNAL PROCESSING </td>
 				<td> 
 				<form>
 					<select name="grade1" onchange="calculate(value,name)">
 						<option value="100"> Select </option>
-						<option value="10">A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C</option>
+						<option value="10">10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6</option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -118,17 +125,17 @@
 			</tr>
 			<tr>
 				<td> 2</td>
-				<td>SEE1105 </td>
-				<td> ELECTRICAL TECHNOLOGY</td>
+				<td>SCS1315 </td>
+				<td>  COMPUTER ARCHITECTURE AND OPERATING SYSTEMS</td>
 				<td> 
 					<form>
 					<select name="grade2" onchange="calculate(value,name)">
 						<option value="100"> Select</option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6</option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -138,17 +145,17 @@
 			</tr>
 			<tr>
 				<td> 3</td>
-				<td> SIC1203</td>
-				<td> MEASUREMENTS AND INSTRUMENTATION</td>
+				<td>SEC1301</td>
+				<td> ANTENNAS AND WAVE PROPAGATION</td>
 				<td> 
 					<form>
 					<select name="grade3" onchange="calculate(value,name)">
 						<option value="100"> Select</option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7">B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7">7 </option>
+						<option value="6"> 6 </option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -157,17 +164,17 @@
 			</tr>
 			<tr>
 				<td> 4</td>
-				<td> SEC1213</td>
-				<td>  PROBABILITY THEORY AND RANDOM PROCESS</td>
+				<td> SEC1303</td>
+				<td>  COMMUNICATION SYSTEMS</td>
 				<td>
 				<form>
 					<select name="grade4" onchange="calculate(value,name)">
 						<option value="100">Select </option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+</option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9</option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6 </option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -177,17 +184,17 @@
 		
 			<tr>
 				<td> 5</td>
-				<td> SEC1208</td>
-				<td> SIGNALS AND SYSTEMS </td>
+				<td> SEC1302</td>
+				<td> ANALOG INTEGRATED CIRCUITS </td>
 				<td> 
 					<form>
 					<select name="grade5" onchange="calculate(value,name)">
 						<option value="100"> Select</option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7">7 </option>
+						<option value="6"> 6 </option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -196,17 +203,17 @@
 			</tr>
 			<tr>
 				<td> 6</td>
-				<td> SEC1205</td>
-				<td> ELECTRONIC CIRCUITS-I</td>
+				<td> SEE1203</td>
+				<td> CONTROL SYSTEMS</td>
 				<td> 
 					<form>
 					<select name="grade6" onchange="calculate(value,name)">
 						<option value="100">Select </option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6 </option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -215,17 +222,17 @@
 			</tr>
 			<tr>
 				<td> 7</td>
-				<td> SEC4058</td>
-				<td> ELECTRONICS CIRCUITS LAB-I</td>
+				<td> SEC4062</td>
+				<td>  ANALOG INTEGRATED CIRCUITS LAB </td>
 				<td> 
 					<form>
 					<select name="grade7" onchange="calculate(value,name)">
 						<option value="100">Select</option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++</option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8</option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6</option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
@@ -234,23 +241,45 @@
 			</tr>
 			<tr>
 				<td> 8</td>
-				<td> SEE401</td>
-				<td> ELECRICAL ENGINEERING LAB-I</td>
+				<td> SEC4065</td>
+				<td> DIGITAL SIGNAL PROCESSING LAB</td>
 				<td> 
 					<form>
 					<select name="grade8" onchange="calculate(value,name)">
 						<option value="100"> Select</option>
-						<option value="10"> A++ </option>
-						<option value="9"> A+ </option>
-						<option value="8"> B++ </option>
-						<option value="7"> B+ </option>
-						<option value="6"> C </option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6 </option>
 						<option value="0"> F </option>
 						<option value="0"> W </option>
 					</select>
 				</form>
 				</td>
 			</tr>
+			
+			<tr>
+				<td> 9</td>
+				<td> S13PT1</td>
+				<td> PROFESSIONAL TRAINING - 1</td>
+				<td> 
+					<form>
+					<select name="grade9" onchange="calculate(value,name)">
+						<option value="100"> Select</option>
+						<option value="10"> 10 </option>
+						<option value="9"> 9 </option>
+						<option value="8"> 8 </option>
+						<option value="7"> 7 </option>
+						<option value="6"> 6 </option>
+						<option value="0"> F </option>
+						<option value="0"> W </option>
+					</select>
+				</form>
+				</td>
+			</tr>
+			
+			 
 			
 			
 		</table>
